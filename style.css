@@ -1,0 +1,521 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Montserrat;
+}
+
+.wrap {
+   width: 100%;
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   padding: 0 150px;
+   flex-direction: column;
+   background-color: #EAEAEA;
+}
+
+header {
+   display: flex;
+   width: 100%;
+   height: 60px;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.choosePhone {
+   display: flex;
+   align-items: center;
+}
+.filterBtn {
+   width: 200px;
+   height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 10px;
+   box-shadow: 0 0 10px #999;
+   cursor: pointer;
+}
+
+.filterBtn:hover {
+   background-color: #333;
+   color: #fff;
+}
+
+.filterContainer {
+   width: 95%;
+   position: relative;
+   left: 5%;
+   height: 150px;
+   top: 50px;
+   box-shadow: 0 0 10px #999;
+   background-color: white;
+   border-radius: 20px;
+   display: none;
+   align-items: center;
+  
+}
+
+.containerItem {
+   width: 300px;
+   height: 100%;
+   /* background-color: royalblue; */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.row {
+   display: flex;
+}
+
+.goodsElement {
+   width: 60px;
+   height: 60px;
+   display: flex;
+   flex-wrap: wrap;
+   /* background-color: rebeccapurple; */
+   margin: 5px;
+   font-size: calc(5px + 0.4vw);
+   color: #333;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   box-shadow: 0 0 10px #999;
+   border-radius: 5px;
+}
+
+.goodsElement:hover {
+   background-color: #333;
+   color: #fff;
+   cursor: pointer;
+}
+
+
+.categories {
+   height: 100%;
+   align-items: center;
+   display: flex;
+   justify-content: flex-start;
+   padding: 0 50px;
+   width: 300px;
+}
+.Setingscategories {
+   height: 100%;
+   align-items: center;
+   display: flex;
+   justify-content: flex-start;
+   padding: 0 50px;
+   width: 300px;
+   display: none;
+}
+
+.categoryNumber {
+   font-size: 50px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   margin-right: 10px;
+}
+
+.categoryNumber p {
+   font-size: 12px;
+   text-align: right;
+}
+
+.containerItem select {
+   outline: none;
+   border: none;
+   border-bottom: .1px solid #333;
+   width: 150px;
+}
+.headerItem {
+   display: flex;
+   align-items: center;
+}
+
+.logo {
+   font-size: 25px;
+   font-weight: bold;
+   font-family: Montserrat;
+   margin-right: 80px;
+   text-transform: uppercase;
+}
+
+.choosePhone img {
+   margin-right: 15px;
+   width: 15px;
+}
+
+.cartGroup {
+   margin-left: 20px;
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+}
+
+.heartGroup {
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+}
+.HeartItems{
+   width: 80%;
+   height: 80vh;
+   background-color: #fff;
+   z-index:5;
+   display: none;
+   position: fixed;
+   padding: 10px;
+}
+.ExitContainer{
+width: 100%;
+display: flex;
+justify-content: flex-end;
+}
+.Exit{
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   text-align: center;
+   justify-content: center;
+  padding-top: 8px;
+   border-bottom: .1px solid #333;
+   cursor: pointer;
+}
+
+.cartGroup img {
+   width: 25px;
+}
+
+.heartGroup img {
+   width: 25px;
+}
+
+.HeartCounter {
+   width: 20px;
+   height: 20px;
+   background-color: orange;
+   border-radius: 50%;
+   position: relative;
+   top: -10px;
+   left: -5px;
+   color: #fff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 12px;
+}
+.CartCounter {
+   width: 20px;
+   height: 20px;
+   background-color: orange;
+   border-radius: 50%;
+   position: relative;
+   top: -10px;
+   left: -5px;
+   color: #fff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 12px;
+}
+
+.banner {
+   width: 100%;
+   height: 200px;
+   border-radius: 30px;
+   background-color: #101010;
+   color: #fff;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   font-size: calc(10px + .5vw);
+   font-weight: 400;
+   margin-top: 50px;
+   margin-bottom: 50px;
+}
+
+.banner img {
+   width: 320px;
+}
+
+main {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   /* background-color: red; */
+}
+
+.phoneCases {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.phoneCasesGroup {
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin-bottom: 100px;
+   align-items: center;
+   /* background-color: red; */
+}
+
+.card {
+   width: 300px;
+   height: 407.65px;
+   padding: 20px 0;
+   box-shadow: 0 0 3px #999;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   flex-direction: column;
+   border-radius: 20px;
+   background-color: #fff;
+   margin: 10px;
+}
+
+.card img {
+   width: 150px;
+}
+h5{
+   width: 100%;
+   text-align: left;
+   color: #838383;
+   margin-bottom: 20px;
+}
+.cardHeartContainer{
+   width: 100%;
+   margin-top: -25px;
+   display: flex;
+   justify-content: flex-end;
+   padding: 20px;
+}
+.AirpodsHeart{
+   width: 25px;
+   height: 25px;
+   background-image: url(./img/airpodsHeard.webp);
+   background-size: cover;
+   margin: 5px;
+   cursor: pointer;
+   z-index: 1;
+}
+
+.airPods{
+   width: 100%;
+   height: auto;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   margin-bottom: 50px;
+}
+.airPods2{
+   width: 100%;
+   height: auto;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   margin-bottom: 50px;
+}
+.airPodsGroup{
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin-bottom: 100px;
+   align-items: center;
+}
+.cardInfo{
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   padding: 0 20px;
+}
+.cardName{
+   font-weight: 700;
+}
+.cardPrice{
+   color: #ffa542;
+   font-weight: 500;
+}
+
+.airPods__card img:nth-child(1){
+   width: 20px;
+}
+.airPods__card img:nth-child(2){
+   width: 220px;
+}
+.BigAirpods{
+   height: 200px;
+}
+.ratingContainer{
+   display: flex;
+   width: 100%;
+   margin-top: 15px;
+}
+.ratingContainer span{
+   margin-left: 10px;
+   color: #838383;
+
+}
+.ButtonBy{
+   width: 200px;
+   height: 30px;
+   background-color: green;
+   color: white;
+   border: none;
+   border-radius: 10px;
+   cursor: pointer;
+}
+footer{
+   height: 149px;
+width: 100%;
+background-color: #fff;
+display: flex;
+align-items: center;
+justify-content: space-around;
+font-size: calc(10px + .5vw);
+font-weight: 400;
+border-top-left-radius: 30px;
+border-top-right-radius: 30px;
+}
+footer h2{
+   position: relative;
+   top:-30px;
+}
+.footerLenghtMenu{
+   display: flex;
+   justify-content: space-around;
+}
+.Uklengh{
+   color: #FFA542;
+}
+.footerLeng img{
+   width: 20px;
+   height: 20px;
+   position: relative;
+}
+.footerSocialNetw{
+   position: relative;
+   top: -18px;
+}
+.footerSocialNetw img{
+   width:  30px;
+   height: 25px;
+}
+.headerMenu{
+   width: 100px;
+   height: 100px;
+}
+.arrow{
+  width: 10px;
+  height: 5px;
+  position: relative;
+  left: 5px;
+  top: 40px;
+  cursor: pointer;
+}
+.arrowMenu{
+   height: 512px;
+   width: 255px; 
+background-color: white;
+position: relative;
+  left: 5px;
+  top: 10px;
+padding-top: 5px;
+display: flex;
+z-index: 1;
+border-radius: 0px 0px 30px 30px;
+display: none;
+}
+.arrowMenuButton{
+text-align: center;
+width:90%;
+height: 50px;
+justify-content:space-between;
+padding-top: 5px;
+cursor: pointer;
+display: flex;
+align-items: center;
+padding-left: 25px;
+}
+.arrowMenuButton img{
+   height: 7.000000000000027px;
+   width: 10.000000000000037px;
+}
+.arrowMenuButtonText{
+   position: relative;
+   top: 40px;
+   left: -120px;
+   text-align: center;
+}
+@media screen and (max-width:900px) {
+   .wrap {
+      padding: 0 40px;
+      height: auto;
+   }
+
+   .heartGroup {
+      display: none;
+   }
+
+   .cartGroup {
+      display: none;
+   }
+
+   .choosePhone {
+      font-size: 14px;
+   }
+
+   .banner {
+      flex-direction: column;
+      justify-content: space-between;
+      height: auto;
+      padding-top: 20px;
+   }
+
+   .banner img {
+      position: relative;
+      top: 18px;
+   }
+   .phoneCasesGroup{
+      justify-content: center;
+   }
+   .airPodsGroup{
+      justify-content: center;
+   }
+   footer{
+      flex-direction: column;
+      justify-content: space-between;
+      height: auto;
+   }
+   footer h2{
+      position: relative;
+      top: 20px;
+      left: -150px;
+   }
+   .footerSocialNetw{
+      position: relative;
+      top: 2px;
+   }
+   .footerLenghtMenu{
+      top: -5px;
+      position: relative;
+   }
+   .arrowMenu{
+      position: relative;
+      left: -230px;
+   }
+}
+@media screen and (max-width:375px) {
+   footer h2{
+      display: none;
+      left: -280px;
+   }
+}
